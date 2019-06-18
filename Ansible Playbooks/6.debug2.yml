@@ -11,6 +11,6 @@
         pkg: telnet
     tasks:
     - shell: cat /etc/ansible/hosts
-      register: hello
-    - debug: msg="Hello File is empty"  
-      when: hello.stdout == ""
+      register: hosts
+    - debug: msg="Hosts File is empty"  
+      when: hosts.stdout == ""
